@@ -1,0 +1,30 @@
+SP23-BAI-008
+
+1- Castle Class
+
+Methods:
+- `updateCurrentRoom(direction)`: Updates the player's current room based on the direction chosen.
+- `look(inventory)`: Displays available directions and items in the current room, filtering items already in the player's inventory.
+
+3. Puzzles Class
+
+Methods:
+- `CatacombRiddle()`: Solves a riddle to open the catacomb exit.
+- `rodPuzzle(ScoreAndHealth)`: A rod movement puzzle that awards bonus points if solved.
+- `symbolLockPuzzle(castle, inventory)`: A code-cracking puzzle that grants a key when solved.
+- `banquetHallChandelier(castle, inventory)`: A puzzle to move a chandelier by using a rope.
+
+4. StepsAndHealth Class
+
+Methods:
+- `getHealth()`: Returns the current health.
+- `decrementHealth()`: Decreases the player's health by 100 per step, with warnings at 500 and 200.
+- `rechargeHealth()`: Recharges health to 2000 at the cost of 20 additional steps.
+
+5. GameState Class
+
+Methods:
+- `saveGame(castle, inventory, stepsAndHealth, game)`: Saves the current game state to a file.
+- `loadGame(castle, inventory, stepsAndHealth, game)`: Loads the saved game state from a file.
+- `clearGame()`: Clears the saved game state, resetting the game.
+- 'resumePreviousGame()' : Loads the Previous Game and Resumes the Game

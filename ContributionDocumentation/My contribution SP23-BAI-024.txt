@@ -1,0 +1,32 @@
+SP23-BAI-024
+
+1- Castle Class
+
+Methods:
+- `goDirection(direction, stepAndHealth)`: Moves the player in the specified direction if it is valid for the current room, updating steps.
+- `showDescription()`: Shows a detailed description of the current room.
+- `getCurrentRoom()`: Returns the current room the player is in.
+
+2. Inventory Class
+
+Methods:
+- `takeItem(item, castle)`**: Adds an item from the current room to the player's inventory if it is not already in possession.
+- `dropItem(item)`**: Removes an item from the inventory.
+- `examine(item)`**: Provides a description of an item.
+- `use(item)`**: Allows the player to use an item from their inventory.
+- `showItems()`**: Displays the list of items in the player's inventory.
+
+3. Puzzles Class
+
+- `AlchemyBookPuzzle(castle, inventory)`: A puzzle involving chemical elements to create a key.
+- `ArtGalleryRiddle()`: A riddle in the art gallery that opens a secret door upon completion.
+- `WineCellarHammer(castle, inventory)`: Requires the player to use a hammer to open a secret box.
+- `theSigilsOfTower(ScoreAndHealth)`: A riddle that rewards the player with bonus steps.
+
+4. StepsAndHealth Class
+
+Methods:
+- `getSteps()`: Returns the total steps taken.
+- `incrementSteps()`: Increases the step count and decreases health.
+- `saveScore()`: Saves the current score (steps) to a file.
+- `getHighestScore()`: Retrieves the highest score from saved scores.
